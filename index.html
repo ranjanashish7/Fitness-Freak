@@ -24,7 +24,7 @@
     }
 
     .left {
-        display: inline-block;
+        display: inline-block ;
         /* border: 2px solid red; */
         position: absolute;
         left: 60px;
@@ -107,6 +107,45 @@
         margin-left: 27.5%;
         
     }
+    .cover {
+    width: 100%;
+    height: 40vmin;
+    background: #00325a;
+    background-position: -24rem -19rem;
+    background-size: 150%;
+    position: relative;
+}
+
+.cover .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    z-index: 40;
+}
+
+.cover .content {
+    width: 100%;
+    height: 80%;
+    background:#00325a;
+    padding-top: 10vmin;
+}
+
+.cover .content>h1 {
+    padding-bottom: 0.1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-size: 7vmin;
+}
+
+.cover .content>p {
+    font-size: 3vmin;
+    color: #e5e5e5;
+}
 
     .form-group input {
     font-family: 'Baloo Bhai', cursive;
@@ -228,7 +267,7 @@
     border-bottom: 5px solid #00325a;
 }
 .our-team:hover{
-    border-bottom: 5px solid #2f2f2f;
+    border-bottom: 5px solid gold;
 }
 
 .our-team .pic{
@@ -255,14 +294,14 @@
 }
 .our-team:hover .pic:before{
  height: 100%;
-    background: #2f2f2f; 
+    background: gold; 
  }
 .our-team .pic:after {
     content: "";
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #ffffff00;
+    background: gold;
     position: absolute;
     top: 0;
     left: 0;
@@ -299,14 +338,14 @@
 .our-team .post{
     display: block;
     font-size: 15px;
-    color: #4e5052;
+    color: gold;
     text-transform:capitalize;
 }
 .our-team .social{
     width: 100%;
     padding: 0;
     margin: 0;
-    background: #2f2f2f;
+    background: gold;
     position: absolute;
     bottom: -100px;
     left: 0;
@@ -451,7 +490,7 @@ input:checked + .slide-container .nav label { display: block; }
     transition: all 0.3s ease 0s;
 }
 .our-team .social li a:hover{
-    color: #2f2f2f;
+    color: skyblue;
     background: #f7f5ec;
 }
 @media only screen and (max-width: 990px){
@@ -653,6 +692,15 @@ input:checked + .slide-container .nav label { display: block; }
         </form>
     </div>
     <section class="our-team-section" id="Team">
+      <!-- Section heading -->
+      <div class="cover">
+        <div class="overlay"></div>
+        <div class="content text-center">
+            <h1>Our Amazing Team</h1>
+            <p>
+            </p>
+        </div>
+    </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
